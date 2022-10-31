@@ -1,54 +1,20 @@
-age = 30
+lottery_numbers = {13,21,22,5,8}
 
-print(age)
+players = [
+  {
+    "name":"joe",
+    "numbers":{1,3,8,7,21}
+  },
+  {
+    "name":"Hanna",
+    "numbers":{4,9,10,12,15}
+  }
+]
 
-age = 40
+name = players[0]["name"]
+numbers = players[0]["numbers"].intersection(lottery_numbers)
+print(f"player {name} got {len(numbers)} numbers right.")
 
-print(age)
-
-age = 35  #integer
-PI = 3.14  #float
-
-maths_operations = 1 + 3 * 4 /2 -2
-
-print(maths_operations)
-
-float_division = 13/5
-print(float_division)
-
-integer_division = 13 //5
-
-
-print(integer_division)
-
-remainder = 13 % 5 #modulus for finding the reminder
-
-print(remainder)
-
-x = 37
-
-remainder_1 = x % 2  #finding odd numbers
-
-print(remainder_1)
-
-my_string = "Hello, World!"
-
-print(my_string)
-
-string_with_quote = "Hello, it's me."
-
-another_string_with_quotes = 'He said "you are amazing" yesterday.'
-
-multiline ="" "Hello, World. My name is Faith. Welcome to my code."""
-
-print(multiline)
-
-print(string_with_quote)
-
-print(another_string_with_quotes)
-
-name = "Faith"
-greeting = "Hello, " + name 
-
-print(greeting)
-
+name = players[1]["name"]
+numbers = players[1]["numbers"].intersection(lottery_numbers)
+print(f"player {name} got {len(numbers)} numbers right.")
